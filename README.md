@@ -4,5 +4,6 @@ Created with CodeSandbox
 How to deal with <form></form>
 as well as onSubmit with help of type=submit
  and most importantly
-  event.preventDefault();
+  event.preventDefault(); === default behaviour ke stop kora
+  in case of forms the default behaviour at the end is to refresh the page 
   which helps us not to refresh the page when the button element is clicked
