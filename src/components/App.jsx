@@ -37,3 +37,21 @@ function App() {
 }
 
 export default App;
+
+
+// controlled components in form
+/* 
+html er khetre element gulo nijer state nijei update kore rakhe
+user input change hole
+llike eg whats ur name r bhetore naam ta change hole 
+html elements gulo nije thekei update kore neye nijer state gulo
+
+
+but in case of react 
+amra jehetu useState use korchi 
+so element gulo jate nije theke update kore nijer state gulo
+we need to use a variable known as value in the element portion and
+oi value r content e amra State ta store kore debo
+
+
+*/
