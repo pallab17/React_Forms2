@@ -55,3 +55,49 @@ oi value r content e amra State ta store kore debo
 
 
 */
+
+import React, { useState } from "react";
+
+function App() {
+  const [name, setName] = useState("");
+  const [headingText, updateHT] = useState("");
+
+  // name = ""
+  // event.target.value = "pallab"
+  // setName = "pallab" tarmane now name = "pallab"
+
+  // input e text likhchi jokhun tokhun this fn is running
+  function handleChange(event) {
+    console.log(event.target.value);
+    setName(event.target.value);
+  }
+
+  // button e click korle this fn is running
+  // now headingtext = ""
+  // now updateHT = name i.e. updateHt = pallab
+  // so headingtext = pallab
+  function hanleClick(event) {
+    updateHT(name);
+    event.preventDefault();
+    //  event.preventDefault(); page ta regresh howar theke stop korche
+    // event ta hooche ekhane clicking the button
+  }
+
+  return (
+    <div className="container">
+      <h1>Hello {headingText}</h1>
+      <form onSubmit={hanleClick}>
+        {/* onSubmit mane hocche submit type r element ta click howa  */}
+        <input
+          onChange={handleChange}
+          type="text"
+          placeholder="What's your name?"
+          value={name}
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
