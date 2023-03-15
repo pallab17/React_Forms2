@@ -6,4 +6,4 @@ as well as onSubmit with help of type=submit
  and most importantly
   event.preventDefault(); === default behaviour ke stop kora
   in case of forms the default behaviour at the end is to refresh the page 
-  which helps us not to refresh the page when the button element is clicked
+  which helps us not to refresh the page after the button element is clicked and the h1 is updated
